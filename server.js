@@ -1,3 +1,4 @@
+const path = require('path');
 const express = require('express');
 const dotenv = require('dotenv').config();
 const morgan = require('morgan');
@@ -12,6 +13,8 @@ app.use(morgan('dev'));
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/api/users', usersRoute);
 
