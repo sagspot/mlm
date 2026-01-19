@@ -18,7 +18,7 @@
   "author": "Oliver Sagala",
   "license": "MIT",
   "dependencies": {
-    "bcrypt": "^5.0.1",
+    "bcrypt": "^6.0.0",
     "colors": "^1.4.0",
     "dotenv": "^10.0.0",
     "express": "^5.1.0",
